@@ -2,6 +2,11 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 const PORT = 8000;
+const cors = require ('cors')
+
+
+// Utiliza CORS en toda tu aplicación
+app.use(cors());
 
 app.use(express.json());
 
